@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+/* Universal CSS Start */
+*{
+   margin: 0px ;
+   padding:  0px;
+   box-sizing:  0px;
+   font-family: 'Roboto', sans-serif;
+   transition: all 0.3s ease !important;
+}
+.bg-danger2{
+    background: #dd0e31;
+}
+.bg-danger3{
+    background: #653588;
+}
+.bg-danger4{
+    background: #654dad;
+}
+.bg-danger5{
+    background: #a498bc;
+}
+.text-danger8{
+    color: #adbcc7;
+}
+.text-danger2{
+    color: #ee1c1c;
+}
+.text-orange{
+    color: #f7812e;
+}
+.text-danger3{
+    color: #adbcc7;
+}
+.bg-warning{
+    background: #f39010;
+}
+.bg-blue{
+    background-color: #161638;
+}
+.top-18{
+    top:18%;
+}
+/* Universal CSS End */
+
+
+/* Banner Section Start */
+.banner{
+    width: 100%;
+    height: 600px;
+    background: 
+               url(../img/travling.jpeg);
+    background-size: 100% 100% ;
+}
+.nav-tabs .nav-link.active{
+    background: #ee0e46;
+}
+.banner .col-lg-1{
+    width:4.86%;
+}
+.banner .trip{
+    width: 61%;
+    display: flex;
+}
+.col {
+    flex: 31% !important; 
+}
+/* Banner Section End */
+
+/* Fun Section start */
+.fun{
+    width: auto;
+    height: auto;
+    background: linear-gradient(rgba(0,0,0,0.4),rgba(0,0,0,0.4)),
+                url(../img/horse.jpg);
+    background-size: 100% 100% ;
+}
+.block{
+    height: 150px;
+    width: 160px;
+    background-color: hsl(0, 0%, 0%,0.7);
+    font-size: 13.5px;
+    cursor: pointer;
+    border-radius: 6px;
+}
+/* Fun Section End */
+
+/* Newsletter Section Start */
+.newsletter{
+    background: linear-gradient(rgba(96, 50, 139, 0.4),rgba(73, 39, 104, 0.4)),
+                url(../img/plane.jpg);
+    background-size: 100% 100% ;
+}
+.form-control {
+    color: #181717 !important;
+}
+.newsletter .email input{
+    width: 73%;
+    padding: 6px 0px;
+    border: 2px solid #fff;
+}
+.newsletter .email input::placeholder{
+    color: #fff;
+    padding-left: 6px;
+}
+/* Newsletter Section End */
+
+/* footer Section Star */
+.footer{
+    background: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),
+                url(../img/pl.jfif);
+    background-size: 100% 100% ;
+}
+/* footer Section End */
+
+
+
+/* Media Section Start */
+@media screen and (max-width:1199px){
+    .banner .col-lg-1{
+            width:6.86%;
+    }
+    .block{
+        height: 140px;
+        width: 140px;
+        font-size: 12.5px;
+    }
+    .banner .container.form-check {
+        margin-right: 33px;
+        margin-left: 2px;
+    }
+    .estimate div img{
+        display: none ;
+    }
+    .estimate div {
+        margin-left: 4%;
+    }
+} 
+@media screen and (max-width:991px) {
+    .banner .container{
+        display:  block !important;
+    }
+    .banner .container span{
+        margin-left: 4px;
+    }
+    .banner .container .form-check{
+        padding-left: 16px;
+        margin-right: 12%;
+    }
+    .banner .btn{
+        width:88%;
+    }
+    .banner .col-lg-1{
+    width:16.39%;
+    }   
+    .estimate .but{
+        width: 85.8%;
+    }
+    footer .bottom li{
+    padding-right: 4px;
+    font-size: 14px !important;
+    }
+}
+@media screen and (min-width:992px){
+    .banner .btnc{
+        width: 78px;
+        height: 72px;
+        top: 35px;
+        right: 12px;
+        border-radius: 60%;
+        position:absolute;
+    }
+}
+
+@media  screen and (max-width:767px) {
+    .banner .col-lg-1{
+        transform: rotate(90deg);
+        position: absolute;
+        right: 20px;
+        top: 65px;
+        width: 11%;
+    }
+    .top-18{
+        top:5%;
+    }
+}
+@media  screen and (max-width:768px) {
+    .fun .container{
+        margin-right:0px;
+   }
+   .banner .container .form-check{
+    margin-right: 9%;
+    padding-left: 12px;
+} 
+}
+@media  screen and (max-width:663px) {
+    .banner .container .hero{
+        display:  block !important; 
+    }
+    .banner .container .form-check{
+        display: block !important; 
+    } 
+}
+@media  screen and (max-width:575px) {
+    .estimate .but{
+        width: 83.8%;
+    }
+}
+@media  screen and (max-width:538px) {
+    .fun .container{
+        margin-left:25px;
+   }
+}
+@media  screen and (max-width:341px) {
+    .fun .container{
+        margin-left:0px;
+   }
+}
+/* Media Section End */
